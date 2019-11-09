@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>chart created with amCharts | amCharts</title>
+    <meta name="description" content="chart created using amCharts live editor" />
+
+    <!-- amCharts javascript sources -->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+
+
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+            {
+                "type": "pie",
+                "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+                "innerRadius": "40%",
+                "colors": [
+                    "#1393F6",
+                    "#F7E33E",
+                    "#536E7B",
+                    "#FCD202",
+                    "#F8FF01",
+                    "#B0DE09",
+                    "#04D215",
+                    "#0D8ECF",
+                    "#0D52D1",
+                    "#2A0CD0",
+                    "#8A0CCF",
+                    "#CD0D74",
+                    "#754DEB",
+                    "#DDDDDD",
+                    "#999999",
+                    "#333333",
+                    "#000000",
+                    "#57032A",
+                    "#CA9726",
+                    "#990000",
+                    "#4B0C25"
+                ],
+                "titleField": "category",
+                "valueField": "column-1",
+                "allLabels": [],
+                "balloon": {},
+                "titles": [],
+                "dataProvider": [
+                    {
+                        "category": "Sim",
+                        "column-1": "4760"
+                    },
+                    {
+                        "category": "Não",
+                        "column-1": "1076"
+                    },
+                    {
+                        "category": "Não respondeu",
+                        "column-1": "617"
+                    }
+                ]
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+</body>
+
+</html>

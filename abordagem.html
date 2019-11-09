@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>chart created with amCharts | amCharts</title>
+    <meta name="description" content="chart created using amCharts live editor" />
+
+    <!-- amCharts javascript sources -->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+
+
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+            {
+                "type": "serial",
+                "categoryField": "category",
+                "startDuration": 1,
+                "fontSize": 13,
+                "handDrawScatter": 1,
+                "handDrawThickness": 0,
+                "categoryAxis": {
+                    "gridPosition": "start"
+                },
+                "trendLines": [],
+                "graphs": [
+                    {
+                        "classNameField": "",
+                        "colorField": "color",
+                        "customMarker": "",
+                        "fillAlphas": 1,
+                        "id": "AmGraph-1",
+                        "labelOffset": 9,
+                        "labelText": "",
+                        "legendAlpha": 1,
+                        "legendColor": "#FF0000",
+                        "legendPeriodValueText": "",
+                        "lineColorField": "color",
+                        "stackable": false,
+                        "title": "Não respondeu",
+                        "type": "column",
+                        "valueField": "Não respondeu"
+                    },
+                    {
+                        "fillAlphas": 1,
+                        "id": "AmGraph-2",
+                        "title": "Por telefone",
+                        "type": "column",
+                        "valueField": "Aposentada(o) e queria fazer outra atividade"
+                    },
+                    {
+                        "fillAlphas": 1,
+                        "id": "AmGraph-3",
+                        "title": "Por redes sociais",
+                        "type": "column",
+                        "valueField": "Já trabalhava na á"
+                    },
+                    {
+                        "fillAlphas": 1,
+                        "id": "AmGraph-4",
+                        "title": "Por e-mail",
+                        "type": "column",
+                        "valueField": "column-4"
+                    },
+                    {
+                        "fillAlphas": 1,
+                        "id": "AmGraph-5",
+                        "title": "Por WhatsApp",
+                        "type": "column",
+                        "valueField": "Fonte de renda"
+                    },
+                    {
+                        "fillAlphas": 1,
+                        "id": "AmGraph-6",
+                        "title": "Pessoalmente",
+                        "type": "column",
+                        "valueField": "comecando empresa precisa de cli"
+                    }
+                ],
+                "guides": [],
+                "valueAxes": [
+                    {
+                        "id": "ValueAxis-1",
+                        "title": "Axis title"
+                    }
+                ],
+                "allLabels": [],
+                "balloon": {},
+                "legend": {
+                    "enabled": true,
+                    "align": "center",
+                    "combineLegend": true,
+                    "labelWidth": 1,
+                    "left": 0,
+                    "position": "right"
+                },
+                "titles": [
+                    {
+                        "id": "Title-1",
+                        "size": 15,
+                        "text": "Chart Title"
+                    }
+                ],
+                "dataProvider": [
+                    {
+                        "category": "",
+                        "Não respondeu": "1051",
+                        "Aposentada(o) e queria fazer outra atividade": "185",
+                        "Já trabalhava na á": "49",
+                        "column-4": "821",
+                        "Fonte de renda": "3561",
+                        "comecando empresa precisa de cli": "566"
+                    }
+                ]
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+</body>
+
+</html>

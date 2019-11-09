@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>chart created with amCharts | amCharts</title>
+    <meta name="description" content="chart created using amCharts live editor" />
+
+    <!-- amCharts javascript sources -->
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+
+
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+            {
+                "type": "serial",
+                "categoryField": "category",
+                "startDuration": 1,
+                "fontSize": 13,
+                "categoryAxis": {
+                    "gridPosition": "start"
+                },
+                "trendLines": [],
+                "graphs": [
+                    {
+                        "colorField": "color",
+                        "fillAlphas": 1,
+                        "fillColors": "#018CF4",
+                        "id": "AmGraph-1",
+                        "lineColorField": "color",
+                        "lineThickness": 0,
+                        "title": "graph 1",
+                        "type": "column",
+                        "valueField": "column-1"
+                    }
+                ],
+                "guides": [],
+                "valueAxes": [
+                    {
+                        "id": "ValueAxis-1",
+                        "title": ""
+                    }
+                ],
+                "allLabels": [],
+                "balloon": {},
+                "titles": [
+                    {
+                        "id": "Title-1",
+                        "size": 15,
+                        "text": "Anos de experiência"
+                    }
+                ],
+                "dataProvider": [
+                    {
+                        "category": "Não respondeu",
+                        "column-1": "48"
+                    },
+                    {
+                        "category": "Menos de 1 ano",
+                        "column-1": "176"
+                    },
+                    {
+                        "category": "1 a 3 anos",
+                        "column-1": "734"
+                    },
+                    {
+                        "category": "4 a 6 anos",
+                        "column-1": "953"
+                    },
+                    {
+                        "category": "7 a 10 anos",
+                        "column-1": "1391"
+                    },
+                    {
+                        "category": "11 a 20 anos",
+                        "column-1": "1795"
+                    },
+                    {
+                        "category": "21 a 30 anos",
+                        "column-1": "919"
+                    },
+                    {
+                        "category": "Acima de 30 anos",
+                        "column-1": "436"
+                    }
+                ]
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;"></div>
+</body>
+
+</html>
